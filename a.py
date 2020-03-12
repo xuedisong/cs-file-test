@@ -1,13 +1,8 @@
-from sys import path
+# coding=utf-8
 import sys
 
 print sys.argv[0]
 b = 0
-c = 0
-# 李鑫发放日的个人固定 g
-if (b == 0):
-    c = 3
-    print c
 print dir()
 f4 = None
 
@@ -16,30 +11,30 @@ def f():
     global c
     print dir()
     b = 2
-    b
     print 'local..'
-    localName = "local name"
+    local_name = "local name"
     print 'b:', b
-    print 'local name:', localName
+    print 'local name:', local_name
     b = 2
     print 'f.attr:'
     print dir()
-    l1 = [1]
+    l12 = [1]
 
     def f1():
         global b
-        print l1
-        l1.append(2)
-        print l1
-        localName = "inner local name "
-        print localName
+        print 'b{}'.format(b)
+        print l12
+        l12.append(2)
+        print l12
+        local_name1 = "inner local name "
+        print local_name1
         print dir()
 
     global f4
     f4 = f1
     # f1()
-    print l1
-    print localName
+    print l12
+    print local_name
     print dir()
     return f1
 
