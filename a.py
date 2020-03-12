@@ -22,15 +22,25 @@ def f():
     l12 = [1]
 
     class F1Class:
+        """zky"""
+        field = 555
+
         def __init__(self):
             self.member = 'member'
+
+        def mem2(self):
+            print ''
+
         def mem(self):
             print 'mem.dir()={}'.format(dir())
             # print 'mem.__self__={}'.format(__self__)
-
             print self.member
-        field = 555
-        """zky"""
+            print self.field
+            print self.mem2
+            #global p
+            print 'mem_p={}'.format(p)
+            print 'mem_dir={}'.format(dir())
+
         print f4
         print 'adsfdsgsdgfdssg={}'.format(l12)
 
