@@ -1,4 +1,5 @@
 # coding=utf-8
+import tet
 import b
 
 class BsubClass(b.BClass):
