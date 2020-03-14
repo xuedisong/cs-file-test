@@ -25,9 +25,10 @@ f4 = None
 p = 2
 np = 44
 
+sss = 1000
+
 
 def f():
-
     print 'lao 66={}'.format(sss)
     print 'dir={}'.format(dir())
     # 可以改变global name的值,所以本scope中的name其实是和global name一样的。所以一个东西不能处于两个namespace。本dir()就没有
@@ -100,7 +101,6 @@ f()
 f4()
 print 'global..'
 print 'b:', b
-sss=1000
 
 
 class Dog:
