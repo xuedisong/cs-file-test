@@ -1,5 +1,5 @@
-from com.sxau.cs.file.man.biz import user_biz
-from com.sxau.cs.file.man.common.model.requset.user_req import UserRequest
+from sxautest.sxau.cs.file.man.biz import user_biz
+from sxautest.sxau.cs.file.man.common.model.requset.user_req import UserRequest
 
 
 def login():
