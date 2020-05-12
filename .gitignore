@@ -2,3 +2,6 @@
 /venv
 *.swp
 *.pyc
+*.csv
+*.xlsx
+*.xls
