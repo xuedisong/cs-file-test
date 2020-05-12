@@ -1,6 +1,7 @@
 import sys
-import xgboost as xgb
+
 import os
+import xgboost as xgb
 
 sys.path.extend(['C:\\Python27\\Lib\\site-packages'])
 

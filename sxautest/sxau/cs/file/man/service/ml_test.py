@@ -10,10 +10,10 @@ target = train['delivery_time']
 train = train.drop(['delivery_time'], axis=1)
 # load data
 dtrain = xgb.DMatrix(train.values, target.values)
-dtest = xgb.DMatrix(train, target)
+dtest = xgb.DMatrix(train.values, target.values)
 
 watchlist = [(dtest, 'eval'), (dtrain, 'train')]
 num_round = 150
 bst = xgb.train(param, dtrain, num_round, watchlist)
 
-bst.save_model('1.model')
+bst.save_model('/Users/zhangshupei/Documents/workspace/dms/bto_turing_engine/output/1.model')
